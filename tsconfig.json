@@ -17,7 +17,7 @@
     "moduleResolution": "node",
     "importHelpers": true,
     "target": "ES2015",
-    "module": "CommonJs",
+    "module": "CommonJS",
     "lib": [
       "es6",
       "dom"

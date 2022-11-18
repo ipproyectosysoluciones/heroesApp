@@ -4,6 +4,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
+import { SweetAlert2Module } from '@sweetalert2/ngx-sweetalert2';
+
 import { AppComponent } from './app.component';
 import { HeroeComponent } from './pages/heroe/heroe.component';
 import { HeroesComponent } from './pages/heroes/heroes.component';
@@ -19,6 +21,7 @@ import { HeroesComponent } from './pages/heroes/heroes.component';
     AppRoutingModule,
     FormsModule,
     HttpClientModule,
+    SweetAlert2Module,
   ],
   providers: [],
   bootstrap: [AppComponent]
