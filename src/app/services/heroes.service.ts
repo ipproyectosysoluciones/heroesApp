@@ -49,6 +49,15 @@ export class HeroesService {
 
   /**
    *
+   * @param id
+   * @returns
+   */
+  getHeroe ( id: string) {
+    return this.http.get( `${ this.url }/heroes/${ id }.json` );
+  }
+
+  /**
+   *
    * @returns
    */
   getHeroes () {
@@ -77,4 +86,14 @@ export class HeroesService {
 
     return heroes;
   }
+  // private crearArreglo ( heroesObj: any ) {
+  //   const heroes: HeroeModel[] = [];
+  //   if ( heroesObj === null ) { return []; }
+  //   for ( let registro in heroesObj ) {
+  //     heroesObj[ registro ].id = registro;
+  //     heroes.push( heroesObj[ registro ] );
+  //   }
+  //   console.log( heroes );
+  //   return heroes;
+  // }
 }
