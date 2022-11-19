@@ -15,11 +15,19 @@ export class HeroeComponent implements OnInit {
 
   heroe: HeroeModel = new HeroeModel();
 
+  /**
+   *
+   * @param heroesService
+   */
   constructor( private heroesService: HeroesService ) { }
 
   ngOnInit(): void {
   }
 
+  /**
+   *
+   * @param form
+   */
   guardar ( form: NgForm ) {
 
     if ( form.invalid ) {
@@ -48,9 +56,8 @@ export class HeroeComponent implements OnInit {
         title: this.heroe.nombre,
         text: 'Se Actualizo correctamente',
         icon: 'success',
-      })
-    })
-
+      } );
+    } );
   }
 
 }
