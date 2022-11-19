@@ -18,7 +18,7 @@ export class HeroeComponent implements OnInit {
   heroe: HeroeModel = new HeroeModel();
 
   /**
-   *
+   * constructor
    * @param heroesService
    * @param route
    */
@@ -39,7 +39,7 @@ export class HeroeComponent implements OnInit {
   }
 
   /**
-   *
+   * guardar
    * @param form
    */
   guardar ( form: NgForm ) {

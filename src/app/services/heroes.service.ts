@@ -11,14 +11,14 @@ export class HeroesService {
   private url = 'https://login-app-10c1e-default-rtdb.firebaseio.com';
 
 /**
- *
+ * constructor
  * @param http
  */
   constructor ( private http: HttpClient, ) { }
 
 
 /**
- *
+ * crearHeroe
  * @param heroe
  * @returns
  */
@@ -33,7 +33,7 @@ export class HeroesService {
   }
 
 /**
- *
+ * actualizarHeroe
  * @param heroe
  * @returns
  */
@@ -48,7 +48,16 @@ export class HeroesService {
   }
 
   /**
-   *
+   * borrarHeroe
+   * @param id
+   * @returns
+   */
+  borrarHeroe ( id: string ) {
+    return this.http.delete( `${ this.url }/heroes/${ id }.json` );
+  }
+
+  /**
+   * getHeroe
    * @param id
    * @returns
    */
@@ -57,7 +66,7 @@ export class HeroesService {
   }
 
   /**
-   *
+   * getHeroes
    * @returns
    */
   getHeroes () {
@@ -68,7 +77,7 @@ export class HeroesService {
   }
 
   /**
-   *
+   * crearArreglo
    * @param heroeObj
    * @returns
    */
